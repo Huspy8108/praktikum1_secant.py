@@ -14,6 +14,7 @@ menggunakan metode Secant dengan dua nilai awal.
 
 Program meminta user untuk memasukkan:
 
+- Fungsi f(x)
 - Nilai x0 (nilai awal pertama)
 - Nilai x1 (nilai awal kedua)
 - Jumlah iterasi maksimum
