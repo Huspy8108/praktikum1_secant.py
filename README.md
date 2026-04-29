@@ -47,6 +47,7 @@ Jalankan program:
 
 ```bash
 python praktikum1_secant.py
+```
 
 ## Instalasi dari Nol
 
