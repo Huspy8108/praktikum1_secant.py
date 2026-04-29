@@ -3,7 +3,7 @@
 Program ini dibuat dengan mengimplementasikan metode Secant untuk mencari akar persamaan,
 dilengkapi dengan tampilan proses iterasi numerik pada terminal.
 
-## Persamaan yang Digunakan
+## Contoh Persamaan yang Digunakan
 
 f(x) = x³ - x - 2
 
