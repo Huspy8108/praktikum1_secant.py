@@ -47,3 +47,48 @@ Jalankan program:
 
 ```bash
 python praktikum1_secant.py
+
+## Instalasi dari Nol
+
+### Python 3
+
+**Mac:**
+1. Buka https://www.python.org/downloads/
+2. Klik tombol kuning "Download Python 3.x.x"
+3. Buka file .pkg yang terdownload
+4. Ikuti langkah instalasi sampai selesai
+5. Cek di terminal:
+
+   python3 --version
+
+**Windows:**
+1. Buka https://www.python.org/downloads/
+2. Klik "Download Python 3.x.x"
+3. Buka file .exe yang terdownload
+4. Centang "Add Python to PATH" 
+5. Klik Install Now
+6. Cek di Command Prompt:
+   
+   python3 --version
+
+### matplotlib & numpy
+
+**Mac & Linux:**
+1. Buka terminal
+2. Ketik:
+   pip3 install matplotlib
+3. Tunggu sampai muncul "Successfully installed"
+4. Cek instalasi:
+   pip3 show matplotlib
+
+**Windows:**
+1. Buka Command Prompt
+2. Ketik:
+   pip3 install matplotlib
+3. Tunggu sampai muncul "Successfully installed"
+4. Cek instalasi:
+   pip show matplotlib
+
+> numpy akan otomatis ikut terinstall bersama matplotlib,
+> jadi tidak perlu install terpisah.
+
