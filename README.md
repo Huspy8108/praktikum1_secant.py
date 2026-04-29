@@ -7,17 +7,15 @@ dilengkapi dengan tampilan proses iterasi numerik pada terminal.
 
 f(x) = x³ - x - 2
 
-Persamaan ini digunakan karena memiliki akar real yang dapat dicari
+Persamaan ini dipilih karena memiliki akar real yang dapat dicari
 menggunakan metode Secant dengan dua nilai awal.
-
----
 
 ## Cara Kerja Program
 
 Program meminta user untuk memasukkan:
-- Fungsi f(x)
-- Nilai awal x0
-- Nilai awal x1  
+
+- Nilai x0 (nilai awal pertama)
+- Nilai x1 (nilai awal kedua)
 - Jumlah iterasi maksimum
 - Toleransi error
 
@@ -30,8 +28,9 @@ hingga menemukan akar yang mendekati solusi.
 
 ### Import Library
 
-* Menggunakan library `math` untuk fungsi matematika.
-* Digunakan untuk menghitung sin, cos, log, dan lainnya jika diperlukan.
+```python
+import math
+```
 
 ### Fungsi f(x)
 
