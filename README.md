@@ -1,8 +1,5 @@
 # Praktikum 1 - Komputasi Numerik (Metode Secant)
-Tugas praktikum kelompok 12 dengan metode secant untuk mencari akar persamaan
-# Praktikum 1 - Komputasi Numerik (Metode Secant)
-
-Program ini dibuat dengan mengimplementasikan metode Secant untuk mencari akar persamaan, dilengkapi dengan tampilan proses iterasi numerik pada terminal.
+Tugas praktikum kelompok 12 - Program ini dibuat dengan mengimplementasikan metode Secant untuk mencari akar persamaan, dilengkapi dengan tampilan proses iterasi numerik pada terminal.
 
 ## Persamaan yang Digunakan
 
