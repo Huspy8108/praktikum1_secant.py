@@ -1,95 +1,88 @@
 # Praktikum 1 - Komputasi Numerik (Metode Secant)
-Tugas praktikum kelompok 12 - Program ini dibuat dengan mengimplementasikan metode Secant untuk mencari akar persamaan, dilengkapi dengan tampilan proses iterasi numerik pada terminal.
+
+Program ini dibuat dengan mengimplementasikan metode Secant untuk mencari akar persamaan,
+dilengkapi dengan tampilan proses iterasi numerik pada terminal.
 
 ## Persamaan yang Digunakan
 
 f(x) = x³ - x - 2
 
-Persamaan ini digunakan karena memiliki akar real yang dapat dicari menggunakan metode Secant dengan dua nilai awal.
+Persamaan ini digunakan karena memiliki akar real yang dapat dicari
+menggunakan metode Secant dengan dua nilai awal.
 
 ---
 
-## Persiapan Iterasi
+## Cara Kerja Program
 
-- Menyiapkan fungsi f(x)
-- Menginput nilai awal x0 dan x1
-- Menentukan jumlah iterasi dan toleransi
-- Menampilkan header tabel hasil iterasi
+Program meminta user untuk memasukkan:
+- Fungsi f(x)
+- Nilai awal x0
+- Nilai awal x1  
+- Jumlah iterasi maksimum
+- Toleransi error
 
----
-
-## Proses Iterasi (Metode Secant)
-
-- Setiap iterasi menghitung nilai x2 dengan rumus metode Secant
-- Nilai x2 akan semakin mendekati akar sebenarnya
-- Error dihitung dari selisih antar iterasi
-- Iterasi berhenti jika error < toleransi atau iterasi maksimum tercapai
+Program akan menampilkan tabel iterasi di terminal
+hingga menemukan akar yang mendekati solusi.
 
 ---
 
-## Tampilan Output
+## Hasil Kode
 
-Program akan menampilkan:
-- Iterasi ke-n
-- Nilai x0, x1, x2
-- Nilai f(x2)
-- Error
+### Import Library
 
-Sehingga pengguna dapat melihat proses konvergensi menuju akar.
+* Menggunakan library `math` untuk fungsi matematika.
+* Digunakan untuk menghitung sin, cos, log, dan lainnya jika diperlukan.
+
+### Fungsi f(x)
+
+* Fungsi dibuat secara dinamis dari input user.
+* Menggunakan `eval()` untuk menghitung nilai f(x).
+
+### Judul Program
+
+* Menampilkan header program di terminal.
+* Membantu memperjelas fungsi program saat dijalankan.
+
+### Input User
+
+* Program meminta input fungsi dan nilai awal.
+* User bisa memasukkan berbagai bentuk fungsi.
+
+### Persiapan Iterasi
+
+* Menyiapkan tampilan tabel iterasi.
+* Menampilkan kolom: iterasi, x0, x1, x2, f(x2), dan error.
+
+### Loop Iterasi
+
+* Menggunakan rumus metode Secant untuk menghitung x2.
+* Setiap iterasi menghasilkan pendekatan baru terhadap akar.
+
+### Perhitungan Error
+
+* Error dihitung dari selisih nilai x antar iterasi.
+* Digunakan untuk menentukan kapan iterasi berhenti.
+
+### Tampilkan Tabel
+
+* Menampilkan hasil setiap iterasi dalam bentuk tabel.
+* Memudahkan pengguna melihat proses konvergensi.
+
+### Update Nilai
+
+* Nilai x0 dan x1 diperbarui setiap iterasi.
+* Digunakan untuk perhitungan selanjutnya.
+
+### Hasil Akhir
+
+* Menampilkan nilai akar yang ditemukan.
+* Menampilkan nilai f(x) sebagai validasi.
 
 ---
 
 ## Cara Menjalankan
 
-Pastikan Python sudah terinstall.
-
 Jalankan program:
 
 ```bash
 python praktikum1_secant.py
-```
-
-## Instalasi dari Nol
-
-### Python 3
-
-**Mac:**
-1. Buka https://www.python.org/downloads/
-2. Klik tombol kuning "Download Python 3.x.x"
-3. Buka file .pkg yang terdownload
-4. Ikuti langkah instalasi sampai selesai
-5. Cek di terminal:
-
-   python3 --version
-
-**Windows:**
-1. Buka https://www.python.org/downloads/
-2. Klik "Download Python 3.x.x"
-3. Buka file .exe yang terdownload
-4. Centang "Add Python to PATH" 
-5. Klik Install Now
-6. Cek di Command Prompt:
-   
-   python3 --version
-
-### matplotlib & numpy
-
-**Mac & Linux:**
-1. Buka terminal
-2. Ketik:
-   pip3 install matplotlib
-3. Tunggu sampai muncul "Successfully installed"
-4. Cek instalasi:
-   pip3 show matplotlib
-
-**Windows:**
-1. Buka Command Prompt
-2. Ketik:
-   pip3 install matplotlib
-3. Tunggu sampai muncul "Successfully installed"
-4. Cek instalasi:
-   pip show matplotlib
-
-> numpy akan otomatis ikut terinstall bersama matplotlib,
-> jadi tidak perlu install terpisah.
-
