@@ -171,9 +171,11 @@ python praktikum1_secant.py
 ```
 4. Contoh Input
 ```
-x0 = 1
-x1 = 2
-iterasi = 10
+* Masukkan fungsi f(x): x**3 - x - 2
+* Masukkan nilai awal x0: 1
+* Masukkan nilai awal x1: 2
+* Masukkan jumlah iterasi maksimum: 10
+* Masukkan toleransi error: 0.000001
 ```
 
 ### Contoh Output
