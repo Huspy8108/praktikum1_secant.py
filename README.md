@@ -25,7 +25,7 @@ hingga menemukan akar yang mendekati solusi.
 
 ---
 
-## Hasil Kode
+## Isi Kode
 
 ### Import Library
 
