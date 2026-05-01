@@ -36,7 +36,10 @@ import math
 ### Fungsi f(x)
 ```
 def buat_fungsi(expr):
-    def f(x):
+   expr = expr.replace("^", "**")                      
+    expr = re.sub(r'(\d)([a-zA-Z(])', r'\1*\2', expr)
+    expr = re.sub(r'(\))(\w)', r'\1*\2', expr)          
+   def f(x):
         return eval(expr, {"__builtins__": None}, {
             "x": x,
             "sin": math.sin,
@@ -121,8 +124,8 @@ x1 = x2
 
 ### Hasil Akhir
 ```
-print(f"[✓] Akar ditemukan: x = {akar:.6f}")
-print(f"[✓] Nilai f(x): {f(akar):.6f}")
+print(f"akar ditemukan: x = {akar:.6f}")
+print(f"nilai f(x): {f(akar):.6f}")
 ```
 * Menampilkan nilai akar yang ditemukan.
 * Menampilkan nilai f(x) sebagai validasi.
